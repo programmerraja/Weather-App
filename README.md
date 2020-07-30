@@ -8,7 +8,13 @@ A weather app build using  a React Js
    <p>This app use your ip address to find your intial location by using <a href="https://ipapi.co/json">IP API</a> ("https://ipapi.co/json")
 the ip api return your latitude longitude by using that app request for the openweathermap API and it returnt the temperature at your location  
   </p>
- 
+  
+# Api used 
+<ul>
+  <li> <a href="https://api.openweathermap.org/data/2.5/weather/"> openweathermap </a></li>
+  <li> <a href="https://ipapi.co/json">IP API</a> </li>
+ </ul>
+    
 # Installation 
  <p> Follow the cmd's to run the app </p>
 <prev>
@@ -33,4 +39,5 @@ the ip api return your latitude longitude by using that app request for the open
  </ul>
  
  # Live demo 
-    <p>Check the website from < a href ="https://programmerraja.github.io/weatherapp/">here</a> </p>
+    <p>Check the website from <a href="https://programmerraja.github.io/weatherapp/">here</a> </p>
+    
