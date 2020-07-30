@@ -11,21 +11,18 @@ the ip api return your latitude longitude by using that app request for the open
  
 # Installation 
  <p> Follow the cmd's to run the app </p>
- 
-"""
+<prev>
 
     cd Weather-App
-"""
-
-"""
+</prev>
+<prev>
     
     npm install 
-""""
-
-"""
+</prev>
+<prev>
     
     npm start 
-"""
+</prev>
 
 # How to use  it ?
    <p> just enter your city in input box for more accurate result enter a city,country </p>
@@ -34,5 +31,6 @@ the ip api return your latitude longitude by using that app request for the open
   <ul>
   <li> breaking down the app in to small components </li>
  </ul>
+ 
  # Live demo 
     <p>Check the website from < a href ="https://programmerraja.github.io/weatherapp/">here</a> </p>
