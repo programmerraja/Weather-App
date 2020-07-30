@@ -1,0 +1,27 @@
+body
+{
+	background-color:purple;
+	margin: 0;
+
+}
+#root
+{
+	margin: 0;
+}
+#result-container
+{
+	width: 28rem;
+	text-align: center;
+	background-color:rgba(0,0,0,.8);
+	margin: auto;
+	color: white;
+	margin-top: 5rem;
+	border-radius: 10px;	
+}
+@media (max-width: 500px)
+{
+	#result-container
+{
+	width: 20rem;	
+}
+}

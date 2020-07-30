@@ -1,0 +1,21 @@
+#temperature
+{
+	font-size: 5rem;
+	font-family: 'Ranchers', cursive;
+}
+#description
+{
+  font-size: 2rem;
+  font-weight: bold;
+}
+#location
+{
+	font-size: 2rem;
+    font-weight: bold;
+}
+#message
+{
+	font-size: 2rem;
+	font-weight: bold;
+	margin: auto;
+}
