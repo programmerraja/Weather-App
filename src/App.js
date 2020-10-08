@@ -15,6 +15,7 @@ class App extends React.Component {
       iconurl: "",
       description: "",
       message: "",
+      selectedcolor : "rgb(255, 245, 89, 0.2)",
     };
     //binding method to this
     this.getInput = this.getInput.bind(this);
@@ -22,6 +23,15 @@ class App extends React.Component {
     //calling the method to get the lat and log by using ip adress
     this.getInput(0, 1);
   }
+  
+
+  changeBackcolor = (event) => {
+    console.log("changed",event.target.value);
+    
+    this.setState({
+        selectedcolor : event.target.value
+    })
+    };
 
   async getWeather(event, lat, lon) {
     let location = this.state.location;
@@ -87,17 +97,36 @@ class App extends React.Component {
   }
   render() {
     return (
+      <div style = {
+        {   
+          backgroundColor : this.state.selectedcolor  
+           }
+          }className = "back-container">
+
+<div className = "color-box">
+
+<h2> Choose Theme </h2>
+<input onChange = {this.changeBackcolor} type ="color"/> 
+
+
+
+</div>
       <Grid container justify='center' alignItems='center'>
         <Grid item xs={12}>
           <Header />
         </Grid>
+        
         <Grid item xs={6} id='container'>
           <UserInput getInput={this.getInput} getWeather={this.getWeather} />
         </Grid>
         <Grid item xs={7}id='result-container'>
            <WeatherResult data={this.state} />
         </Grid>
+        
       </Grid>
+
+      </div>
+      
     );
   }
 }

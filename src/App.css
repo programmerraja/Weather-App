@@ -7,3 +7,35 @@ body {
   margin: 0;
 }
 
+.back-container{
+  width: 100%;
+  height: 100vh;
+  top : 10;
+  /*centering style*/
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow ;
+  }
+  
+  .color-box{
+      position : fixed;
+      width: 120px;
+      height: 80px;
+      top : 12px;
+      padding-bottom: 1px;
+      left : 12px;
+      border : 3px purple solid;
+      border-radius : 10px;
+      /*centering style*/
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 10px;
+      font-family : 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-style: italic;
+      }
+
+      
