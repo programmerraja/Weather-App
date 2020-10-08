@@ -1,19 +1,19 @@
-import React  from 'react';
+import React from "react";
 import "./UserInput.css";
+import { TextField, Button } from "@material-ui/core";
 
-
-class UserInput extends React.Component{
- render()
- {
- 	return(
-
- 			<div id="search">
- 			<input type="text"  placeholder="Enter City,Country" onChange={this.props.getInput}/>
- 			<input type="button" value="Get Weather"  onClick={this.props.getWeather}/>
- 			</div>
- 		)
- }
-
-}
+const UserInput = ({ getInput, getWeather }) => (
+  <div id='search'>
+    <TextField fullWidth label='Enter City, Country' onChange={getInput} />
+    <Button
+      id='get-weather-button'
+      variant='contained'
+      color='secondary'
+      onClick={getWeather}
+    >
+      Get Weather
+    </Button>
+  </div>
+);
 
 export default UserInput;

@@ -1,45 +1,50 @@
-import React  from 'react';
+import React from "react";
 import "./WeatherResult.css";
-import hot from './images/hot.png';
-import map_pointer from './images/map-pointer.png';
+import { Grid, Typography } from "@material-ui/core";
+import hot from "./images/hot.png";
+import map_pointer from "./images/map-pointer.png";
 
-class WeatherResult extends React.Component{
-	  render()
-		 {
-		  if(this.props.data)
-		  {
-					 	if(this.props.data.temp )
-					 	{
-					 		return(
-					 				<div>
-					 				<span id="temperature">
-					 					{this.props.data.temp} C &#176;
-					 					<img src={hot} width="50px" height="50px" alt="temperature"/>
-					 				</span>
-					 				<br/>
-					 				
-					 				<img src={this.props.data.iconurl} alt="icon" width="100px" height="100px" alt="weather_icon"/>
-					 				<p id="description">{this.props.data.description}</p>
-
-					 				<p id="location">
-					 					<img src={map_pointer} width="30px" height="30px" alt="map_pointer"/>
-					 					{this.props.data.location}
-					 				</p>
-					 				</div>  			
-					 	  	    )
-					 	}
-					 	else if(this.props.data.message)
-					 	{
-					 		return(
-					 				<div>
-					 				<p id="message">{this.props.data.message}</p>
-					 				</div> 
-					 			)
-					 	}
-		 }
-		 return(null)
-		 }
-
-}
+const WeatherResult = ({ data }) => {
+  if (data?.temp) {
+    return (
+        <Grid container justify='center' alignItems='center'>
+          <Grid item xs={12}>
+            <Typography id='temperature'>
+              Current Temperature: {data.temp}&#176;C
+              <img src={hot} width='30px' height='30px' alt='temperature' />
+            </Typography>
+          </Grid>
+          <Grid item xs={12}>
+            <img
+              src={data.iconurl}
+              alt='weather_icon'
+              width='120px'
+              height='120px'
+            />
+          </Grid>
+          <Grid item xs={12}>
+            <Typography id='description'>{data.description}</Typography>
+            <Typography id='location'>
+              <img
+                src={map_pointer}
+                width='30px'
+                height='30px'
+                alt='map_pointer'
+              />
+              {data.location}{" "}
+            </Typography>
+          </Grid>
+        </Grid>
+    );
+  }
+  if (data?.message) {
+    return (
+      <div>
+        <p id='message'>{data.message}</p>
+      </div>
+    );
+  }
+  return null;
+};
 
 export default WeatherResult;

@@ -1,27 +1,9 @@
-body
-{
-	background-color:purple;
-	margin: 0;
+body {
+  margin: 100;
+  background-color: rgb(255, 245, 89, 0.2);
+}
+#root {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+}
 
-}
-#root
-{
-	margin: 0;
-}
-#result-container
-{
-	width: 28rem;
-	text-align: center;
-	background-color:rgba(0,0,0,.8);
-	margin: auto;
-	color: white;
-	margin-top: 5rem;
-	border-radius: 10px;	
-}
-@media (max-width: 500px)
-{
-	#result-container
-{
-	width: 20rem;	
-}
-}

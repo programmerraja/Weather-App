@@ -1,14 +1,13 @@
-#header
-{
-	background-color: white;
-	text-align: center;
-	margin: 0;
-	display: flex;
-	justify-content: center;
+#header {
+  text-align: center;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  align-items: center;
 }
-#header p
-{
-	font-size: 2rem;
-	text-align: center;
-	margin: 0;
+#header p {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
 }
