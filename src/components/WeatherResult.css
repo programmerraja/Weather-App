@@ -1,21 +1,25 @@
+#result-container
+{
+	text-align: center;
+	font-size: 1.5rem;
+}
 #temperature
 {
-	font-size: 5rem;
-	font-family: 'Ranchers', cursive;
+	font-size: 1.5rem;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 #description
 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 #location
 {
-	font-size: 2rem;
+	font-size: 1.5rem;
     font-weight: bold;
 }
 #message
 {
-	font-size: 2rem;
+	font-size: 1.5rem;
 	font-weight: bold;
-	margin: auto;
 }
