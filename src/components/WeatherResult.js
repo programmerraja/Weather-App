@@ -12,19 +12,28 @@ class WeatherResult extends React.Component{
 					 	{
 					 		return(
 					 				<div>
+									<div style={{
+										display: "flex",
+										alignItems: "center",
+									}}>
+					 					<img src={map_pointer} style={{ marginRight: "1rem" }} width="30px" height="30px" alt="map_pointer"/>
+										<p id="location">{this.props.data.location}</p>
+									</div>
+					 				
+
 					 				<span id="temperature">
-					 					{this.props.data.temp} C &#176;
-					 					<img src={hot} width="50px" height="50px" alt="temperature"/>
+					 					<img src={hot} style={{ marginRight: "1rem" }} width="50px" height="50px" alt="temperature"/>
+					 					{this.props.data.temp} &#176;C 
 					 				</span>
 					 				<br/>
 					 				
-					 				<img src={this.props.data.iconurl} alt="icon" width="100px" height="100px" alt="weather_icon"/>
-					 				<p id="description">{this.props.data.description}</p>
-
-					 				<p id="location">
-					 					<img src={map_pointer} width="30px" height="30px" alt="map_pointer"/>
-					 					{this.props.data.location}
-					 				</p>
+									<div style={{
+										display: "flex",
+										alignItems: "center",
+									}}>
+										<img src={this.props.data.iconurl} alt="icon" width="100px" height="100px" alt="weather_icon"/>
+					 					<p id="description">{this.props.data.description}</p>
+									</div>
 					 				</div>  			
 					 	  	    )
 					 	}

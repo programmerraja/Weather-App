@@ -1,6 +1,6 @@
 body
 {
-	background-color:purple;
+	background-color:#111;
 	margin: 0;
 
 }
@@ -10,18 +10,32 @@ body
 }
 #result-container
 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	margin: 5rem auto 0;
+}
+
+#result-container > div
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
 	width: 28rem;
-	text-align: center;
-	background-color:rgba(0,0,0,.8);
-	margin: auto;
+	padding: 2rem;
+	border-radius: 4px;
+	box-sizing: content-box;
+
 	color: white;
-	margin-top: 5rem;
-	border-radius: 10px;	
+	background-color: #444;
 }
 @media (max-width: 500px)
 {
-	#result-container
-{
-	width: 20rem;	
-}
+	#result-container > div
+	{
+		width: 20rem;	
+	}
 }

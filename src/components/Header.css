@@ -1,14 +1,20 @@
 #header
 {
-	background-color: white;
-	text-align: center;
-	margin: 0;
+	height: 4rem;
 	display: flex;
+	align-items: center;
 	justify-content: center;
+
+	background-color: #222;
+	border-bottom: 4px solid #333;
+}
+#header img
+{
+	margin-right: 0.5rem;
 }
 #header p
 {
+	color: #ffd900;
 	font-size: 2rem;
-	text-align: center;
 	margin: 0;
 }

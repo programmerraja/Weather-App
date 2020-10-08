@@ -8,7 +8,7 @@ class UserInput extends React.Component{
  	return(
 
  			<div id="search">
- 			<input type="text"  placeholder="Enter City,Country" onChange={this.props.getInput}/>
+ 			<input type="text"  placeholder="Enter City, Country" onChange={this.props.getInput}/>
  			<input type="button" value="Get Weather"  onClick={this.props.getWeather}/>
  			</div>
  		)

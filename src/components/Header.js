@@ -8,7 +8,8 @@ class Header extends React.Component{
  	return(
 
  			<div id="header">
- 			<p> Weather App</p><img src={sun} height="40px" width="40px" alt="logo"/>
+ 			<img src={sun} height="40px" width="40px" alt="logo"/>
+			<p> Weather App</p>
  			</div>
  		)
  }
