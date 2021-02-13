@@ -7,7 +7,7 @@ import map_pointer from "./images/map-pointer.png";
 const WeatherResult = ({ data }) => {
   if (data?.temp) {
     return (
-        <Grid container justify='center' alignItems='center'>
+        <Grid container justify='center' alignItems='center' id='result-container'>
           <Grid item xs={12}>
             <Typography id='temperature'>
               Current Temperature: {data.temp}&#176;C
@@ -39,7 +39,7 @@ const WeatherResult = ({ data }) => {
   }
   if (data?.message) {
     return (
-      <div>
+      <div id='result-container'>
         <p id='message'>{data.message}</p>
       </div>
     );

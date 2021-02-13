@@ -91,10 +91,10 @@ class App extends React.Component {
         <Grid item xs={12}>
           <Header />
         </Grid>
-        <Grid item xs={6} id='container'>
+        <Grid item xs={10} id='container' >
           <UserInput getInput={this.getInput} getWeather={this.getWeather} />
         </Grid>
-        <Grid item xs={7}id='result-container'>
+        <Grid item xs={10} >
            <WeatherResult data={this.state} />
         </Grid>
       </Grid>
